@@ -27,5 +27,6 @@ RUN mvn package
 WORKDIR /
 
 # Default command
+# This should be a different repo...
 ENTRYPOINT ["java", "-cp", "210108_cucumber/target/210108_Cucumber-0.0.1-SNAPSHOT.jar", "com.posco.RunApp"]
 
