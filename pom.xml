@@ -5,10 +5,20 @@
 	<groupId>Posco</groupId>
 	<artifactId>210108_Cucumber</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CucumberStart</name>
+	<name>maven-cucumber-docker</name>
+	<url>https://github.com/hughharford/maven-cucumber-docker.git</url>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.1.RELEASE</version>
+		<relativePath />
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
 		<testGroup>src/test/java/runners</testGroup>
 		<cucumber.version>6.9.0</cucumber.version>
 		<junit.version>4.12</junit.version>
@@ -16,6 +26,18 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
 		<dependency>
